@@ -5,6 +5,10 @@
 * License: https://bootstrapmade.com/license/
 */
 
+.logo-color {
+  filter: brightness(0) saturate(100%) invert(76%) sepia(10%) saturate(6793%) hue-rotate(197deg) brightness(98%) contrast(92%);
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
