@@ -98,7 +98,7 @@
       </nav><!-- .nav-menu -->
       <!--<a href="https://kubero.kubero.dev/" target="_blank" class="get-started-btn scrollto" style="background: #ce2459;">DEMO</a>-->
 
-      <a href="https://github.com/kubero-dev" target="_blank" class="get-started-btn scrollto">Github</a>
+      <a href="https://github.com/kubero-dev/kubero" target="_blank" class="get-started-btn scrollto">Github</a>
 
     </div>
   </header><!-- End Header -->
@@ -127,7 +127,7 @@
           <div class="icon-box">
             <div class="icon"><i class="ri-open-source-line"></i></div>
             <h4 class="title"><a href="">Open-Source</a></h4>
-            <p class="description">All components are open-source and no hidden services or paid extra content to unlock</p>
+            <p class="description">All components are open-source and self-hosted. No hidden services or paid extra content to unlock</p>
           </div>
         </div>
 
@@ -151,7 +151,7 @@
           <div class="icon-box">
             <div class="icon"><i class="ri-stack-line"></i></div>
             <h4 class="title"><a href="">Addons</a></h4>
-            <p class="description">Simple installation of addons like Redis-Cluster, PostgreSQL, MongoDB and more</p>
+            <p class="description">Simple installation for addons like MySQL, Redis-Cluster, PostgreSQL, Kafka, CouchDB, Elasticsearch, MongoDB and more</p>
           </div>
         </div>
       </div>
@@ -184,7 +184,7 @@
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="500">
           <div class="icon-box">
             <div class="icon"><i class="ri-git-branch-line"></i></div>
-            <h4 class="title"><a href="">Git</a></h4>
+            <h4 class="title"><a href="">GitOps</a></h4>
             <p class="description">Many supported Git repositories (Github, Bitbucket, Gitea, Gitlab, Gogs ... )</p>
           </div>
         </div>
@@ -208,8 +208,8 @@
           <div class="col-lg-6 pt-4 pt-lg-0">
             <p>
               Your developers should not need to worry about the underlying infrastructure and deployment.
-              No Helm or Kubernetes knowledge is required start a new Application. Kubero is a PaaS for Kubernetes.
-              It is a set of Kubernetes controllers that provide a simple way to deploy applications on Kubernetes.
+              No Docker, Helm or Kubernetes knowledge is required start a new Application. Kubero is a PaaS for Kubernetes.
+              It is a set a Kubernetes operator that provides a simple way to deploy applications on Kubernetes.
             </p>
             <p>
               It is a Kubernetes native solution that does not require any external dependencies.
@@ -222,8 +222,8 @@
               Kubero claims to have the fastest deployment on Kubernetes.
             </p>
             <ul>
-              <li><i class="ri-check-double-line"></i> It's open-source</li>
-              <li><i class="ri-check-double-line"></i> Run it on your sites (Multi Cluster)</li>
+              <li><i class="ri-check-double-line"></i> 100% free and open-source (FOSS)</li>
+              <li><i class="ri-check-double-line"></i> 100% self-hosted (Multi Cluster)</li>
               <li><i class="ri-check-double-line"></i> No hidden fees or premium features</li>
             </ul>
           </div>
@@ -920,6 +920,16 @@
 
         <div class="faq-list">
           <ul>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Does Kubero require any special Kubernetes cluster? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+                <p>
+                  No. Kubero can be installed on any Kubernetes cluster. The Kubero CLI has built in installers for several cloudprovider or on-premises clusters to get you started.
+                </p>
+              </div>
+            </li>
+
             <li data-aos="fade-up">
               <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">Can I manage my Kubernetes cluster with Kubero? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
@@ -942,9 +952,26 @@
               <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Is there any support/service I can book? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-3" class="collapse" data-parent=".faq-list">
                 <p>
-                  No.
+                  No. And there is nothing planned yet.
                 </p>
               </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Is Kubero free to use?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+                <p>
+                  Yes, Kubero is free and open source.
+                </p>
+              </div>
+
+              <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Can i add my own app to services?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+                  <p>
+                    Yes. Pull requests are very welcome. Read <a href="https://github.com/kubero-dev/kubero/tree/main/services">here</a> how to add your own app to services.
+                  </p>
+                </div>
             </li>
 <!--
             <li data-aos="fade-up" data-aos-delay="300">
