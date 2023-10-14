@@ -216,4 +216,28 @@
     aos_init();
   });
 
+  
+  $('.btn-run-script').click(function() {
+    // copy button content to clipboard
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(this).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+
+    // change button text
+    $(this).text('Copied!');
+/*
+    // change button color
+    $(this).removeClass('btn-outline-primary');
+    $(this).addClass('btn-outline-success');
+
+    // change button icon
+    $(this).find('i').removeClass('icofont-copy');
+    $(this).find('i').addClass('icofont-check-circled');
+*/
+    // remove button click event
+    $(this).off('click');
+  });
+
 })(jQuery);
