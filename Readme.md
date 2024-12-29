@@ -1,3 +1,5 @@
+## Deprecated
+
 Thanks for downloading this template!
 
 Template Name: OnePage
